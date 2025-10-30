@@ -33,3 +33,19 @@ To fix this quickly and permanently:
 - Explore relationships between datasets (merging movies and ratings).
 - Calculate basic rating statistics per movie.
 - Visualize rating distributions.
+
+
+## – Data Cleaning
+
+**Tasks Completed:**
+- Implemented a dedicated cleaning pipeline (`scripts/clean_data.py`) for movies, ratings, and users.
+- Standardized list-like columns, repaired missing identifiers/titles, and harmonized numeric fields.
+- Generated merged ratings ↔ movies dataset to support downstream analysis.
+
+**Key Outputs:**
+- Cleaned datasets saved to `data/processed/`.
+- Cleaning summary added at `reports/data_cleaning_report.md`.
+
+**Next Steps:**
+- Leverage the cleaned merged dataset to compute per-movie statistics.
+- Begin exploratory analysis focused on genre and rating trends.
