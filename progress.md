@@ -1,4 +1,4 @@
-## Day 1 – Project Setup and Initial Data Inspection
+## – Project Setup and Initial Data Inspection
 
 **Summary:**
 Set up project structure, virtual environment, and Git repository.  
@@ -20,3 +20,16 @@ To fix this quickly and permanently:
 - All datasets (`movies.csv`, `ratings.csv`, `users.csv`) now load cleanly with the default Pandas parser
 - Environment and project structure confirmed working
 - Ready to proceed with exploratory data analysis (EDA)
+
+
+## – Initial Data Exploration
+
+**Tasks Completed:**
+- Extended `load_data.py` to include dataset summaries.
+- Generated automated EDA report with shape, columns, missing values, and duplicate counts.
+- Output written to `reports/eda_summary.txt`.
+
+**Next Steps:**
+- Explore relationships between datasets (merging movies and ratings).
+- Calculate basic rating statistics per movie.
+- Visualize rating distributions.

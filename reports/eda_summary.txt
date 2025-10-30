@@ -1,0 +1,45 @@
+===MOVIES ===
+Shape: (285941, 19)
+Columns: ['_id', 'genres', 'image_url', 'imdb_id', 'imdb_link', 'movie_id', 'movie_title', 'original_language', 'overview', 'popularity', 'production_countries', 'release_date', 'runtime', 'spoken_languages', 'tmdb_id', 'tmdb_link', 'vote_average', 'vote_count', 'year_released']
+Missing values:
+_id                         0
+genres                  10956
+image_url               21421
+imdb_id                 42044
+imdb_link               42028
+movie_id                  326
+movie_title              2489
+original_language       10956
+overview                24580
+popularity              11070
+production_countries    11088
+release_date            14987
+runtime                 15998
+spoken_languages        11183
+tmdb_id                  6138
+tmdb_link                6138
+vote_average            11183
+vote_count              11183
+year_released            8105
+Duplicate rows: 0
+
+===RATINGS ===
+Shape: (11078167, 4)
+Columns: ['_id', 'movie_id', 'rating_val', 'user_id']
+Missing values:
+_id           0
+movie_id      6
+rating_val    0
+user_id       0
+Duplicate rows: 0
+
+===USERS ===
+Shape: (8139, 5)
+Columns: ['_id', 'display_name', 'num_ratings_pages', 'num_reviews', 'username']
+Missing values:
+_id                     0
+display_name          307
+num_ratings_pages    3392
+num_reviews             0
+username                0
+Duplicate rows: 0
