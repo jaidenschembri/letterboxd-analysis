@@ -49,3 +49,17 @@ To fix this quickly and permanently:
 **Next Steps:**
 - Leverage the cleaned merged dataset to compute per-movie statistics.
 - Begin exploratory analysis focused on genre and rating trends.
+
+
+## – Per-Movie Aggregates
+
+**Tasks Completed:**
+- Produced per-title rating statistics from the cleaned merged dataset.
+- Captured counts, averages, dispersion, and unique rater totals for each movie.
+
+**Key Outputs:**
+- Detailed aggregates stored at `data/processed/movie_aggregates.csv`.
+- Highlight summary written to `reports/movie_aggregates_summary.md`.
+
+**Next Steps:**
+- Use aggregates to explore genre trends and visualize rating distributions.

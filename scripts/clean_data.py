@@ -1,28 +1,16 @@
-"""
-Data cleaning utilities for the Letterboxd movie ratings project.
-
-The cleaning pipeline addresses the primary issues surfaced in
-reports/eda_summary.txt: missing identifiers, sparse categorical fields,
-and inconsistent numeric types across the three core datasets.
-"""
-
 from __future__ import annotations
-
 import ast
 from dataclasses import dataclass
 from pathlib import Path
 from typing import Dict, Iterable, List, Tuple
-
 import pandas as pd
 
 DATA_DIR = Path(__file__).resolve().parent.parent / "data"
 REPORTS_DIR = Path(__file__).resolve().parent.parent / "reports"
 PROCESSED_DIR = DATA_DIR / "processed"
 
-
 @dataclass
 class CleaningReport:
-    """Simple container for recording cleaning actions and row counts."""
 
     name: str
     notes: List[str]
@@ -37,7 +25,6 @@ class CleaningReport:
 
 
 def parse_str_list(value) -> List[str]:
-    """Convert serialized list strings into real Python lists."""
     if pd.isna(value):
         return []
     if isinstance(value, list):
@@ -51,13 +38,11 @@ def parse_str_list(value) -> List[str]:
         except (ValueError, SyntaxError):
             parsed = [chunk.strip() for chunk in value.split(",") if chunk.strip()]
         if isinstance(parsed, list):
-            # Filter out falsy entries such as empty strings
             return [str(item).strip() for item in parsed if str(item).strip()]
     return []
 
 
 def ensure_numeric(df: pd.DataFrame, columns: Iterable[str]) -> None:
-    """Force columns to numeric dtype in-place."""
     for column in columns:
         df[column] = pd.to_numeric(df[column], errors="coerce")
 
