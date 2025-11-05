@@ -10,9 +10,9 @@ def load_datasets():
     users = pd.read_csv(DATA_DIR / "users.csv")
     return movies, ratings, users
 
-def summarize_df(df: pd.DataFrame, name: str) -> str:
+def summarize_df(df, name):
     summary = [
-        f"==={name.upper()}===",
+        f"{name.upper()}",
         f"Shape: {df.shape}",
         f"Columns: {list(df.columns)}",
         f"Missing values:\n{df.isna().sum().to_string()}",
@@ -33,7 +33,10 @@ if __name__ == "__main__":
     ]
 
     report_text = "\n".join(summaries)
+
     print(report_text)
+
     with open(REPORTS_DIR / "eda_summary.txt", "w") as f:
         f.write(report_text)
+
     print("\n EDA summary written to reports/eda_summary.txt")
