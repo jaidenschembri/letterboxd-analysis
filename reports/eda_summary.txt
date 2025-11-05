@@ -1,4 +1,4 @@
-===MOVIES ===
+MOVIES
 Shape: (285941, 19)
 Columns: ['_id', 'genres', 'image_url', 'imdb_id', 'imdb_link', 'movie_id', 'movie_title', 'original_language', 'overview', 'popularity', 'production_countries', 'release_date', 'runtime', 'spoken_languages', 'tmdb_id', 'tmdb_link', 'vote_average', 'vote_count', 'year_released']
 Missing values:
@@ -23,7 +23,7 @@ vote_count              11183
 year_released            8105
 Duplicate rows: 0
 
-===RATINGS ===
+RATINGS
 Shape: (11078167, 4)
 Columns: ['_id', 'movie_id', 'rating_val', 'user_id']
 Missing values:
@@ -33,7 +33,7 @@ rating_val    0
 user_id       0
 Duplicate rows: 0
 
-===USERS ===
+USERS
 Shape: (8139, 5)
 Columns: ['_id', 'display_name', 'num_ratings_pages', 'num_reviews', 'username']
 Missing values:

@@ -1,6 +1,6 @@
 # Genre Analysis Report
 
-- Visual outputs: `reports/rating_distribution.png`, `reports/top_genres_average_rating.png`
+- Visual outputs: `reports/rating_distribution.png`, `reports/top_genres_average_rating.png`, `reports/yearly_rating_trends.png`, `reports/language_rating_volume.png`
 - Genres evaluated: 19
 - Movies with at least one genre: 222525
 - Genre assignments across all movies: 384514

@@ -15,6 +15,3 @@ data/
 *.log
 *.tmp
 *.bak
-reports/*.png
-reports/*.jpg
-reports/*.pdf
