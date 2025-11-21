@@ -8,13 +8,13 @@ Analyze the Letterboxd public dataset to understand how viewers rate films, whic
 
 ## Project Highlights
 - Cleans **11M+ user ratings** across **283K films** using Pandas-based scripts.
-- Generates polished visualizations covering rating distributions, genre performance, release-year trends, and language insights.
-- Summarizes key takeaways in `reports/findings_report.md` for quick portfolio sharing.
+-Generates visualizations covering rating distributions, genre performance, release-year trends, and language insights.
+- Summarizes key takeaways in `reports/findings_report.md`.
 
 ## Repository Structure
 ```
 ├── data/                # Raw CSVs (movies.csv, ratings.csv, users.csv) and processed outputs
-├── reports/             # Generated analyses, charts, and the findings brief
+├── reports/             # Generated analyses, charts, and findings 
 ├── scripts/             # Reusable Python scripts for each pipeline stage
 ├── requirements.txt     # Python dependencies
 ├── progress_plan.md     # Detailed roadmap and status log
@@ -28,7 +28,7 @@ source venv/bin/activate            # Windows: venv\Scripts\activate
 pip install --upgrade pip
 pip install -r requirements.txt
 ```
-
+i
 Populate the `data/` directory with the Letterboxd CSV exports (`movies.csv`, `ratings.csv`, `users.csv`), then run one of the options below.
 
 ### Option 1 – Makefile (recommended)
@@ -54,11 +54,6 @@ All scripts are idempotent; rerunning them overwrites prior outputs in `reports/
 - `reports/yearly_rating_trends.png` – Release-year volume vs. rolling-average sentiment.
 - `reports/language_rating_volume.png` – Rating volume and averages by original language.
 - `data/processed/` – CSV archives for processed tables and aggregations.
-
-## Portfolio Notes
-- Reference the "Project Highlights" and visuals above when showcasing results.
-- `progress_plan.md` captures the evolution of the work and can guide talking points during interviews.
-- Suggested follow-ups include user segmentation, TMDb/IMDb benchmarking, or turning the findings report into a blog post or slide deck.
 
 ## License & Credits
 This analysis uses Letterboxd data released under their terms of service. Ensure you comply with the data source license when publishing results.
